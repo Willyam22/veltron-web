@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body, #root {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #07070A;
+    color: #F8FAFC;
+    overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.glass {
+  background: rgba(17, 17, 22, 0.75);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: linear-gradient(180deg, rgba(24, 24, 31, 0.85) 0%, rgba(17, 17, 22, 0.94) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 24px 50px -20px rgba(56, 189, 248, 0.16);
+}
+
+.text-gradient-titanium {
+  background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 48%, #38BDF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
